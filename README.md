@@ -10,15 +10,15 @@ The application allows users to manage products, customers, and orders while aut
 
 ### Frontend (Netlify)
 
-https://YOUR-NETLIFY-URL.netlify.app
+https://inventorymanagement-app.netlify.app
 
 ### Backend API (Render)
 
-https://YOUR-RENDER-URL.onrender.com
+https://inventory-system-07pk.onrender.com
 
 ### API Documentation
 
-https://YOUR-RENDER-URL.onrender.com/docs
+https://inventory-system-07pk.onrender.com/docs
 
 ### Docker Hub Image
 
@@ -48,7 +48,6 @@ docker pull ritika1307/inventory-backend:latest
 
 * Create Customer
 * View Customers
-* Update Customer
 * Delete Customer
 
 ## Order Management
@@ -215,11 +214,11 @@ npm install
 Create:
 
 ```text
-frontend/.env
+frontend/src/services/api.js
 ```
 
-```env
-VITE_API_URL=http://localhost:8000
+```
+baseURL=http://localhost:8000
 ```
 
 ---
@@ -391,30 +390,6 @@ DELETE /orders/{id}
 ```http
 GET /dashboard
 ```
-
----
-
-# Screenshots
-
-Add screenshots of:
-
-* Dashboard
-* Products Page
-* Customers Page
-* Orders Page
-* Swagger API Documentation
-
----
-
-# Future Enhancements
-
-* JWT Authentication
-* Role-Based Access Control
-* Pagination
-* Search & Filtering
-* Order History
-* Audit Logs
-* Inventory Analytics
 
 ---
 
