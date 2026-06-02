@@ -411,17 +411,24 @@ GET /dashboard
 
 ## Dashboard
 
-![Dashboard]
+[Dashboard]
+
 <img width="1674" height="848" alt="image" src="https://github.com/user-attachments/assets/5c7054a7-f854-4a67-a25f-c352efa76489" />
 
 
 ## Products
 
-![Products](screenshots/products.png)
+[Products]
+
+<img width="1686" height="833" alt="image" src="https://github.com/user-attachments/assets/bee2c02c-689b-4a0f-a1e9-e24768689271" />
+
 
 ## Orders
 
-![Orders](screenshots/orders.png)
+[Orders]
+
+<img width="1681" height="788" alt="image" src="https://github.com/user-attachments/assets/48a0233f-1ad5-4879-9a65-05c28a12f435" />
+
 
 ---
 
