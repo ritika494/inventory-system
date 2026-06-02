@@ -24,6 +24,10 @@ https://inventory-system-07pk.onrender.com/docs
 
 https://hub.docker.com/r/ritika1307/inventory-backend
 
+### GitHub Repository
+
+https://github.com/ritika494/inventory-system
+
 Pull image:
 
 ```bash
@@ -209,19 +213,25 @@ npm install
 
 ---
 
-## Configure API URL
+## API Configuration
 
-Create:
+Update:
 
-```text
-frontend/src/services/api.js
+```javascript
+// src/services/api.js
+
+const api = axios.create({
+  baseURL: "http://localhost:8000"
+});
 ```
 
-```
-baseURL=http://localhost:8000
-```
+For production:
 
----
+```javascript
+const api = axios.create({
+  baseURL: "https://inventory-system-07pk.onrender.com"
+});
+```
 
 ## Run Frontend
 
@@ -296,6 +306,12 @@ docker run -p 8000:8000 ritika1307/inventory-backend:latest
 ---
 
 # Deployment
+
+## Note
+
+The backend is deployed on Render Free Tier.
+
+If the service has been inactive, the first request may take up to a minute while Render wakes the service.
 
 ## Backend Deployment (Render)
 
@@ -390,6 +406,22 @@ DELETE /orders/{id}
 ```http
 GET /dashboard
 ```
+
+# Screenshots
+
+## Dashboard
+
+![Dashboard]
+<img width="1674" height="848" alt="image" src="https://github.com/user-attachments/assets/5c7054a7-f854-4a67-a25f-c352efa76489" />
+
+
+## Products
+
+![Products](screenshots/products.png)
+
+## Orders
+
+![Orders](screenshots/orders.png)
 
 ---
 
